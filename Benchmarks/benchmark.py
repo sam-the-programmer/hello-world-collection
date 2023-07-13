@@ -1,10 +1,7 @@
 from timeit import default_timer as timer
 
 def fib(n):
-    if n <= 2:
-        return 1
-    else:
-        return fib(n - 1) + fib(n - 2)
+    return 1 if n <= 2 else fib(n - 1) + fib(n - 2)
 
 start = timer()
 
